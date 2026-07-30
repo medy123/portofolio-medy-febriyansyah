@@ -19,7 +19,7 @@ const translations = {
         'nav.education': 'Education',
         'nav.contact': 'Contact',
         'hero.kicker': 'PORTFOLIO / PERSONAL BRAND',
-        'hero.subtitle': 'Project Management · Product Strategy · Data Science',
+        'hero.subtitle': 'Product Management . Project Management · Product Strategy · Data Science',
         'hero.greeting': 'Hello, I\'m Medy Febriyansyah',
         'hero.title': 'Building clarity, momentum, and execution across digital products.',
         'hero.badgeOne': 'Project Management',
