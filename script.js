@@ -2,7 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const navAnchors = document.querySelectorAll('.nav-links a');
 const sections = document.querySelectorAll('main section[id]');
-const revealTargets = document.querySelectorAll('.hero-panel, .about-text-card, .stat-card, .highlight-card, .exp-card, .project-card, .skill-group, .edu-card, .org-card, .honor-card, .bootcamp-card, .contact-method');
+const revealTargets = document.querySelectorAll('.hero-panel, .about-text-card, .stat-card, .highlight-card, .exp-card, .project-card, .skill-group, .edu-card, .org-card, .honor-card, .bootcamp-card, .contact-method, .gallery-card');
 const langToggle = document.querySelector('[data-lang-toggle]');
 const translatableNodes = document.querySelectorAll('[data-i18n]');
 const languageStorageKey = 'medy-portfolio-language';
@@ -14,13 +14,14 @@ const translations = {
         'nav.experience': 'Experience',
         'nav.projects': 'Projects',
         'nav.skills': 'Skills',
+        'nav.gallery': 'Gallery',
         'nav.organization': 'Organization',
         'nav.education': 'Education',
         'nav.contact': 'Contact',
         'hero.kicker': 'PORTFOLIO / PERSONAL BRAND',
         'hero.subtitle': 'Project Management · Product Strategy · Data Science',
         'hero.greeting': 'Hello, I\'m Medy Febriyansyah',
-        'hero.title': 'S.Kom., CITM — Building clarity, momentum, and execution across digital products.',
+        'hero.title': 'Building clarity, momentum, and execution across digital products.',
         'hero.badgeOne': 'Project Management',
         'hero.badgeTwo': 'Product Strategy',
         'hero.badgeThree': 'Data Science',
@@ -227,6 +228,9 @@ const translations = {
         'contact.portfolioLabel': 'Portfolio',
         'contact.locationLabel': 'Location',
         'contact.locationValue': 'Bantul, Yogyakarta, Indonesia',
+        'gallery.kicker': 'Project Gallery',
+        'gallery.title': 'Screenshots & activity highlights across projects.',
+        'gallery.intro': 'A visual look at dashboards, platforms, and documentation from the initiatives I led or contributed to.',
         'footer.copy': '\u00a9 2026 Medy Febriyansyah, S.Kom., CITM. Designed to communicate clarity, leadership, and product-focused execution.'
     },
     id: {
@@ -235,6 +239,7 @@ const translations = {
         'nav.experience': 'Pengalaman',
         'nav.projects': 'Proyek',
         'nav.skills': 'Keahlian',
+        'nav.gallery': 'Galeri',
         'nav.organization': 'Organisasi',
         'nav.education': 'Pendidikan',
         'nav.contact': 'Kontak',
@@ -448,6 +453,9 @@ const translations = {
         'contact.portfolioLabel': 'Portofolio',
         'contact.locationLabel': 'Lokasi',
         'contact.locationValue': 'Bantul, Yogyakarta, Indonesia',
+        'gallery.kicker': 'Galeri Proyek',
+        'gallery.title': 'Cuplikan layar & sorotan aktivitas di berbagai proyek.',
+        'gallery.intro': 'Tampilan visual dari dashboard, platform, dan dokumentasi dari inisiatif yang saya pimpin atau kontribusikan.',
         'footer.copy': '\u00a9 2026 Medy Febriyansyah, S.Kom., CITM. Dirancang untuk menyampaikan kejelasan, kepemimpinan, dan eksekusi yang berfokus pada produk.'
     }
 };
@@ -576,6 +584,55 @@ window.addEventListener('resize', () => {
         closeMenu();
     }
     setActiveNav();
+});
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = lightbox.querySelector('.lightbox-image');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+const lightboxNext = lightbox.querySelector('.lightbox-next');
+
+const allGalleryImages = Array.from(document.querySelectorAll('.gallery-card img'));
+
+const openLightbox = (imgElement) => {
+    const index = allGalleryImages.indexOf(imgElement);
+    if (index === -1) return;
+    lightboxImage.src = imgElement.src;
+    lightboxImage.dataset.index = index;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+};
+
+const closeLightbox = () => {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+};
+
+const navigateLightbox = (direction) => {
+    const currentIndex = parseInt(lightboxImage.dataset.index, 10);
+    if (isNaN(currentIndex)) return;
+    const nextIndex = (currentIndex + direction + allGalleryImages.length) % allGalleryImages.length;
+    const nextImg = allGalleryImages[nextIndex];
+    lightboxImage.src = nextImg.src;
+    lightboxImage.dataset.index = nextIndex;
+};
+
+allGalleryImages.forEach((img) => {
+    img.addEventListener('click', () => openLightbox(img));
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+lightboxNext.addEventListener('click', () => navigateLightbox(1));
+
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navigateLightbox(-1);
+    if (e.key === 'ArrowRight') navigateLightbox(1);
 });
 
 document.addEventListener('click', (event) => {
