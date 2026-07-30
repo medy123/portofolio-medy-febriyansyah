@@ -246,7 +246,7 @@ const translations = {
         'hero.kicker': 'PORTOFOLIO / PERSONAL BRAND',
         'hero.subtitle': 'Manajemen Proyek · Strategi Produk · Sains Data',
         'hero.greeting': 'Halo, saya Medy Febriyansyah',
-        'hero.title': 'S.Kom., CITM — Membangun kejelasan, momentum, dan eksekusi di berbagai produk digital.',
+        'hero.title': 'Membangun kejelasan, momentum, dan eksekusi di berbagai produk digital.',
         'hero.badgeOne': 'Manajemen Proyek',
         'hero.badgeTwo': 'Strategi Produk',
         'hero.badgeThree': 'Sains Data',
@@ -456,7 +456,7 @@ const translations = {
         'gallery.kicker': 'Galeri Proyek',
         'gallery.title': 'Cuplikan layar & sorotan aktivitas di berbagai proyek.',
         'gallery.intro': 'Tampilan visual dari dashboard, platform, dan dokumentasi dari inisiatif yang saya pimpin atau kontribusikan.',
-        'footer.copy': '\u00a9 2026 Medy Febriyansyah, S.Kom., CITM. Dirancang untuk menyampaikan kejelasan, kepemimpinan, dan eksekusi yang berfokus pada produk.'
+        'footer.copy': '\u00a9 2026 Medy Febriyansyah, S.Kom., CITM. Kejelasan. Kepemimpinan. Eksekusi yang berfokus pada produk.'
     }
 };
 
@@ -476,11 +476,14 @@ const applyLanguage = (language) => {
     });
 
     document.documentElement.lang = language;
-    localStorage.setItem(languageStorageKey, language);
+    try { localStorage.setItem(languageStorageKey, language); } catch (_) {}
     updateLanguageToggle(language);
 };
 
-const initialLanguage = localStorage.getItem(languageStorageKey) === 'id' ? 'id' : 'en';
+let initialLanguage = 'en';
+try {
+    initialLanguage = localStorage.getItem(languageStorageKey) === 'id' ? 'id' : 'en';
+} catch (_) {}
 applyLanguage(initialLanguage);
 
 if (langToggle) {
@@ -587,10 +590,10 @@ window.addEventListener('resize', () => {
 });
 
 const lightbox = document.getElementById('lightbox');
-const lightboxImage = lightbox.querySelector('.lightbox-image');
-const lightboxClose = lightbox.querySelector('.lightbox-close');
-const lightboxPrev = lightbox.querySelector('.lightbox-prev');
-const lightboxNext = lightbox.querySelector('.lightbox-next');
+const lightboxImage = lightbox?.querySelector('.lightbox-image');
+const lightboxClose = lightbox?.querySelector('.lightbox-close');
+const lightboxPrev = lightbox?.querySelector('.lightbox-prev');
+const lightboxNext = lightbox?.querySelector('.lightbox-next');
 
 const allGalleryImages = Array.from(document.querySelectorAll('.gallery-card img'));
 
@@ -617,23 +620,25 @@ const navigateLightbox = (direction) => {
     lightboxImage.dataset.index = nextIndex;
 };
 
-allGalleryImages.forEach((img) => {
-    img.addEventListener('click', () => openLightbox(img));
-});
+if (lightbox && lightboxImage && lightboxClose && lightboxPrev && lightboxNext) {
+    allGalleryImages.forEach((img) => {
+        img.addEventListener('click', () => openLightbox(img));
+    });
 
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-});
-lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
-lightboxNext.addEventListener('click', () => navigateLightbox(1));
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+    lightboxNext.addEventListener('click', () => navigateLightbox(1));
 
-document.addEventListener('keydown', (e) => {
-    if (!lightbox.classList.contains('is-open')) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') navigateLightbox(-1);
-    if (e.key === 'ArrowRight') navigateLightbox(1);
-});
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+    });
+}
 
 document.addEventListener('click', (event) => {
     if (!hamburger || !navLinks) return;
