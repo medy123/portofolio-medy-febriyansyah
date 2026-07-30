@@ -1215,6 +1215,156 @@ section {
     color: var(--primary-strong);
 }
 
+.organization {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.org-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.org-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.org-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-lg);
+}
+
+.org-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.org-role {
+    color: var(--primary-strong);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.org-card .date {
+    margin: 0.15rem 0 0.8rem;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+.org-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.honors {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.03));
+}
+
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.honor-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.honor-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-lg);
+}
+
+.honor-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.honor-place {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+.honor-desc {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.bootcamp-title {
+    margin-top: 2rem;
+}
+
+.bootcamp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.bootcamp-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bootcamp-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-lg);
+}
+
+.bootcamp-card h4 {
+    font-size: 1.08rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.35;
+}
+
+.bootcamp-card .institution {
+    font-size: 0.9rem;
+}
+
+.bootcamp-card .date {
+    margin: 0.15rem 0 0.8rem;
+    font-size: 0.88rem;
+}
+
+.bootcamp-card .exp-list {
+    margin-top: 0.5rem;
+}
+
+.bootcamp-card .exp-list li {
+    font-size: 0.88rem;
+}
+
+.edu-detail {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0.6rem 0;
+}
+
 .footer {
     padding: 2rem 1rem 3rem;
     color: var(--text-muted);
@@ -1256,7 +1406,10 @@ section {
     .contact-grid,
     .education-main,
     .cert-grid,
-    .highlights-grid {
+    .highlights-grid,
+    .org-timeline,
+    .honors-grid,
+    .bootcamp-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1465,7 +1618,10 @@ section {
     .skills-grid,
     .education-main,
     .cert-grid,
-    .contact-grid {
+    .contact-grid,
+    .org-timeline,
+    .honors-grid,
+    .bootcamp-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1476,6 +1632,9 @@ section {
     .project-card,
     .skill-group,
     .edu-card,
+    .org-card,
+    .honor-card,
+    .bootcamp-card,
     .contact-method,
     .stat-card,
     .highlight-card {
