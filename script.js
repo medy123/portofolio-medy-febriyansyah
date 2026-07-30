@@ -231,7 +231,7 @@ const translations = {
         'gallery.kicker': 'Project Gallery',
         'gallery.title': 'Screenshots & activity highlights across projects.',
         'gallery.intro': 'A visual look at dashboards, platforms, and documentation from the initiatives I led or contributed to.',
-        'footer.copy': '\u00a9 2026 Medy Febriyansyah, S.Kom., CITM. Designed to communicate clarity, leadership, and product-focused execution.'
+        'footer.copy': '\u00a9 2026 Medy Febriyansyah, S.Kom., CITM. Clarity. Leadership. Product-focused execution.'
     },
     id: {
         'nav.home': 'Beranda',
