@@ -1,1072 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Medy Febriyansyah, S.Kom., CITM - Project Management, Product Strategy & Data Science Portfolio">
-    <title>Medy Febriyansyah | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizka Septia Prabu — Portfolio</title>
+  <meta name="description" content="Portofolio Rizka Septia Prabu, S.E., CIMM — Ekonomi Islam, Literasi Keuangan Syariah & Pengembangan Ekosistem Ekonomi Syariah Nasional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="logo" aria-label="Go to hero section">
-                <img src="gambarlogo_portofoliomedy.jpeg" alt="Medy Febriyansyah logo" class="logo-image">
-            </a>
-            <div class="nav-actions">
-                <button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle>EN</button>
-                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <ul class="nav-links" id="site-menu">
-                <li><a href="#hero" data-i18n="nav.home">Home</a></li>
-                <li><a href="#about" data-i18n="nav.about">About</a></li>
-                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-                <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
-                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-                <li><a href="#organization" data-i18n="nav.organization">Organization</a></li>
-                <li><a href="#education" data-i18n="nav.education">Education</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-glow hero-glow-one"></div>
-            <div class="hero-glow hero-glow-two"></div>
-            <div class="rocket rocket-1" aria-hidden="true">🚀</div>
-            <div class="rocket rocket-2" aria-hidden="true">🚀</div>
-            <div class="hero-container">
-                <div class="hero-left">
-                    <div class="eyebrow-group">
-                        <p class="label-top" data-i18n="hero.kicker">PORTFOLIO / PERSONAL BRAND</p>
-                        <p class="label-subtitle" data-i18n="hero.subtitle">Product Management . Project Management · Product Strategy · Data Science</p>
-                    </div>
-
-                    <div class="hero-content">
-                        <p class="greeting" data-i18n="hero.greeting">Hello, I’m Medy Febriyansyah</p>
-                        <h1 class="name" data-i18n="hero.title">Building clarity, momentum, and execution across digital products.</h1>
-
-                        <div class="role-box">
-                            <div class="role-text">
-                                <span class="badge-pm" data-i18n="hero.badgeOne">Project Management</span>
-                                <span class="badge-separator">+</span>
-                                <span class="badge-pm" data-i18n="hero.badgeTwo">Product Strategy</span>
-                                <span class="badge-separator">+</span>
-                                <span class="badge-pm" data-i18n="hero.badgeThree">Data Science</span>
-                            </div>
-                            <div class="role-arrow" aria-hidden="true">→</div>
-                        </div>
-
-                        <p class="hero-desc" data-i18n="hero.descriptionPrimary">Graduated in Information Systems with strong hands-on experience in Product Management, Project Management, and Data Science. Skilled in Agile & Scrum, product discovery, stakeholder communication, data analysis, and data visualization.</p>
-                        <p class="hero-desc hero-desc-secondary" data-i18n="hero.descriptionSecondary">Passionate about transforming data-driven insights into actionable strategies that improve decision-making, product value, and user experience.</p>
-
-                        <div class="hero-cta">
-                            <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaPrimary">Let’s Work Together</a>
-                            <a href="#projects" class="btn btn-secondary" data-i18n="hero.ctaSecondary">Explore Projects</a>
-                        </div>
-
-                        <div class="hero-trust">
-                            <span class="trust-pill" data-i18n="hero.trustOne">8+ PM roles</span>
-                            <span class="trust-pill" data-i18n="hero.trustTwo">15+ digital initiatives</span>
-                            <span class="trust-pill" data-i18n="hero.trustThree">CITM certified</span>
-                            <span class="trust-pill" data-i18n="hero.trustFour">GPA 3.81</span>
-                            <span class="trust-pill" data-i18n="hero.trustFive">TOEFL 633</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-right">
-                    <div class="hero-panel photo-panel">
-                        <div class="photo-frame">
-                            <img src="profile.jpg.JPG" alt="Portrait of Medy Febriyansyah" class="hero-photo">
-                        </div>
-                        <div class="photo-caption-row">
-                            <div>
-                                <p class="panel-label" data-i18n="hero.snapshotLabel">Professional Snapshot</p>
-                                <h2 class="panel-title" data-i18n="hero.snapshotTitle">Confident, approachable, and ready to lead meaningful delivery.</h2>
-                            </div>
-                            <span class="photo-badge" data-i18n="hero.snapshotBadge">PM · Product · Data</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-panel contact-card">
-                        <p class="panel-label" data-i18n="hero.contactLabel">Direct Contact</p>
-                        <div class="contact-links">
-                            <a href="mailto:medifebr212@gmail.com">medifebr212@gmail.com</a>
-                            <a href="https://wa.me/6283172941924" target="_blank" rel="noreferrer">+62 831 7294 1924</a>
-                            <a href="https://linkedin.com/in/medy-febriyansyah" target="_blank" rel="noreferrer">linkedin.com/in/medy-febriyansyah</a>
-                            <a href="https://medyfebriyansyah.github.io/portofolio/" target="_blank" rel="noreferrer">Portofolio Medy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="about.kicker">About Me</p>
-                    <h2 data-i18n="about.title">Information Systems graduate with a passion for product, project, and data-driven execution.</h2>
-                    <p class="section-intro" data-i18n="about.intro">Graduated in Information Systems, with strong interest and hands-on experience in Product Management, Project Management, and Data Science.</p>
-                </div>
-
-                <div class="about-grid">
-                    <div class="about-text-card">
-                        <p class="about-lead" data-i18n="about.lead">Skilled in Agile & Scrum framework, product discovery, product lifecycle management, stakeholder communication, data analysis, and data visualization.</p>
-                        <p data-i18n="about.paraOne">Experienced in applying design thinking, business analysis, and financial modeling to drive product growth and project success.</p>
-                        <p data-i18n="about.paraTwo">Passionate about transforming data-driven insights into actionable strategies that improve decision-making, product value, and user experience.</p>
-                        <p data-i18n="about.paraThree">IPK 3.81/4.00 · AAEPT 564 · TOEFL 633</p>
-                    </div>
-
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3>8+</h3>
-                            <p data-i18n="about.statOne">Project & product roles</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>15+</h3>
-                            <p data-i18n="about.statTwo">Digital initiatives delivered</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>3.81</h3>
-                            <p data-i18n="about.statThree">GPA in Information Systems</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>633</h3>
-                            <p data-i18n="about.statFour">TOEFL score</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="highlights-grid">
-                    <article class="highlight-card">
-                        <p class="highlight-kicker" data-i18n="about.highKickerOne">Leadership</p>
-                        <h3 data-i18n="about.highTitleOne">Project & Product Management</h3>
-                        <p data-i18n="about.highDescOne">Leading cross-functional teams, managing stakeholders, and delivering digital products using Agile & Scrum framework.</p>
-                    </article>
-                    <article class="highlight-card">
-                        <p class="highlight-kicker" data-i18n="about.highKickerTwo">Analysis</p>
-                        <h3 data-i18n="about.highTitleTwo">Data Science & Analytics</h3>
-                        <p data-i18n="about.highDescTwo">Data screening, analysis, machine learning implementation, and data visualization to drive business decisions.</p>
-                    </article>
-                    <article class="highlight-card">
-                        <p class="highlight-kicker" data-i18n="about.highKickerThree">Design</p>
-                        <h3 data-i18n="about.highTitleThree">UI/UX & Design Thinking</h3>
-                        <p data-i18n="about.highDescThree">Applying design thinking methodology, wireframing, prototyping, and user research to create impactful product experiences.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="experience">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="experience.kicker">Career Journey</p>
-                    <h2 data-i18n="experience.title">Professional experience across project management, product strategy, and digital execution.</h2>
-                    <p class="section-intro" data-i18n="experience.intro">From startups to enterprise clients, each role strengthened my ability to lead delivery, align stakeholders, and drive product value.</p>
-                </div>
-
-                <div class="experience-timeline">
-                    <article class="exp-card exp-card-current">
-                        <div class="exp-header">
-                            <div class="company-logo-wrap">
-                                <img src="logo-gits.jpg" alt="PT Gits Indonesia logo" class="company-logo">
-                            </div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-badge">CURRENT</span>
-                                    <span class="exp-meta">Enterprise · AI · Platform Delivery</span>
-                                </div>
-                                <h3>Project Manager</h3>
-                                <p class="company">PT Gits Indonesia</p>
-                                <p class="date">May 2026 – August 2026</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.gitsPm.summary">Leading multiple enterprise-scale projects with full ownership of delivery, stakeholder alignment, and team coordination.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.gitsPm.li1">Product Owner of Product Carte</li>
-                            <li data-i18n="exp.gitsPm.li2">Project Manager of JRKU Approval and Mobile Service</li>
-                            <li data-i18n="exp.gitsPm.li3">Project Manager of JRKU Rebuild</li>
-                            <li data-i18n="exp.gitsPm.li4">Project Manager of JRKU External and Web Partner</li>
-                            <li data-i18n="exp.gitsPm.li5">Project Manager of Tellin Batic 2026</li>
-                            <li data-i18n="exp.gitsPm.li6">Project Manager of Warehouse Management System PLN Kaltimra</li>
-                            <li data-i18n="exp.gitsPm.li7">Project Manager of Danone Adop Asset</li>
-                            <li data-i18n="exp.gitsPm.li8">Project Manager of Auresys Audit AI Platform</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-wrap">
-                                <img src="logo-gits.jpg" alt="PT Gits Indonesia logo" class="company-logo">
-                            </div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">Enterprise · Platform Delivery</span>
-                                </div>
-                                <h3>Project Manager Intern</h3>
-                                <p class="company">PT Gits Indonesia</p>
-                                <p class="date">November 2025 – May 2026</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.gitsIntern.summary">Managed and co-managed multiple enterprise-scale initiatives with structured execution and stakeholder coordination.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.gitsIntern.li1">Project Manager of Warehouse Management System PLN Kaltimra</li>
-                            <li data-i18n="exp.gitsIntern.li2">Project Manager of Danone Adop Asset</li>
-                            <li data-i18n="exp.gitsIntern.li3">Co-Project Manager of Jasa Raharja JRKU Employee</li>
-                            <li data-i18n="exp.gitsIntern.li4">Co-Project Manager of myPertamina Merchant</li>
-                            <li data-i18n="exp.gitsIntern.li5">Co-Project Manager of Auresys Audit AI Platform</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-wrap">
-                                <img src="logo-qiscus.jpg" alt="PT Qiscus Tekno Indonesia logo" class="company-logo">
-                            </div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">AI Campaign & Platform Projects</span>
-                                </div>
-                                <h3>Project Manager Intern</h3>
-                                <p class="company">PT Qiscus Tekno Indonesia</p>
-                                <p class="date">July 2025 – December 2025</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.qiscus.summary">Led execution of 7 major AI-focused initiatives with Agile coordination, client communication, and cross-functional team management.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.qiscus.li1">Lead execution of Project KP2MI (Form Pengaduan Imigrant)</li>
-                            <li data-i18n="exp.qiscus.li2">Lead Assistant Project Paragon AI</li>
-                            <li data-i18n="exp.qiscus.li3">Lead execution of Project Instaperfect AI</li>
-                            <li data-i18n="exp.qiscus.li4">Lead execution of Project OMG AI</li>
-                            <li data-i18n="exp.qiscus.li5">Lead execution of Project Paragon</li>
-                            <li data-i18n="exp.qiscus.li6">Lead execution of Project IZI Custom Agent Allocation</li>
-                            <li data-i18n="exp.qiscus.li7">Lead Assistant Project Makeover AI</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-wrap">
-                                <img src="logo-wesclic.jpg" alt="PT Wesclic Indonesia Neotech logo" class="company-logo">
-                            </div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">Mobile Apps · UI/UX Collaboration</span>
-                                </div>
-                                <h3>Project Manager Intern</h3>
-                                <p class="company">PT Wesclic Indonesia Neotech</p>
-                                <p class="date">October 2024 – March 2025</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.wesclic.summary">Led app development projects and UI/UX design initiatives using Agile Scrum methodology and Asana for management.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.wesclic.li1">Lead Project Zendo Apps (Mobile Transportation)</li>
-                            <li data-i18n="exp.wesclic.li2">Lead Project Merapi Apps (Information System of Wonosobo Health Center)</li>
-                            <li data-i18n="exp.wesclic.li3">Lead Project Sumu Apps (Mobile Lifestyle Muhammadiyah)</li>
-                            <li data-i18n="exp.wesclic.li4">Lead Assistant Project Muslim Super Apps (Mobile Lifestyle Muslim)</li>
-                            <li data-i18n="exp.wesclic.li5">Lead UI/UX Design for multiple projects</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-wrap">
-                                <img src="logo-rakamin.jpg" alt="Rakamin Academy logo" class="company-logo">
-                            </div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">Virtual Internship Program</span>
-                                </div>
-                                <h3>Product Manager Virtual Internship</h3>
-                                <p class="company">PT Rakamin Academy</p>
-                                <p class="date">April 2025 – May 2025</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.rakaminPm.summary">Built product management foundations in stakeholder management, problem framing, and product release.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.rakaminPm.li1">Stakeholder Management</li>
-                            <li data-i18n="exp.rakaminPm.li2">Problem Framing</li>
-                            <li data-i18n="exp.rakaminPm.li3">Product Release</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-wrap">
-                                <img src="logo-rakamin.jpg" alt="Rakamin Academy logo" class="company-logo">
-                            </div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">UI/UX Design Program</span>
-                                </div>
-                                <h3>UI/UX Designer Virtual Internship</h3>
-                                <p class="company">Rakamin Academy x NiagaHoster</p>
-                                <p class="date">April 2023 – May 2023</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.rakaminUx.summary">Learned and applied UI/UX fundamentals through design thinking methodology and prototyping.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.rakaminUx.li1">UI/UX Fundamentals & Design Thinking</li>
-                            <li data-i18n="exp.rakaminUx.li2">User and Product Research</li>
-                            <li data-i18n="exp.rakaminUx.li3">User Journey & Visual Design</li>
-                            <li data-i18n="exp.rakaminUx.li4">Prototyping</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-text" aria-hidden="true">V</div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">Digital Marketing</span>
-                                </div>
-                                <h3>Digital Marketing</h3>
-                                <p class="company">VINIX</p>
-                                <p class="date">November 2022 – February 2023</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.vinix.summary">Optimized sales of training products through market analysis and marketing funnel strategies.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.vinix.li1">Designed product information series through social media</li>
-                            <li data-i18n="exp.vinix.li2">Analyzed market size for training programs</li>
-                            <li data-i18n="exp.vinix.li3">Created Marketing Funnel for user segmentation</li>
-                        </ul>
-                    </article>
-
-                    <article class="exp-card">
-                        <div class="exp-header">
-                            <div class="company-logo-text company-logo-text-alt" aria-hidden="true">T</div>
-                            <div class="exp-header-content">
-                                <div class="exp-topline">
-                                    <span class="exp-meta">Digital Marketing</span>
-                                </div>
-                                <h3>Digital Marketing</h3>
-                                <p class="company">TAM Group</p>
-                                <p class="date">January 2023 – February 2023</p>
-                            </div>
-                        </div>
-                        <p class="exp-summary" data-i18n="exp.tam.summary">Optimized product sales through social media marketing and brand awareness strategies.</p>
-                        <ul class="exp-list">
-                            <li data-i18n="exp.tam.li1">Optimized product sales through digital channels</li>
-                            <li data-i18n="exp.tam.li2">Designed product information content for social media</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="projects.kicker">Featured Projects</p>
-                    <h2 data-i18n="projects.title">Projects that reflect range, ownership, and product understanding.</h2>
-                    <p class="section-intro" data-i18n="projects.intro">From AI platforms and enterprise systems to mobile apps and UX redesigns — each project strengthened my delivery capability.</p>
-                </div>
-
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🏭</span>
-                            <span class="project-type">Enterprise System</span>
-                        </div>
-                        <h3>Warehouse Management System PLN Kaltimra</h3>
-                        <p class="role" data-i18n="project.wms.role">Role: Project Manager</p>
-                        <p class="project-copy" data-i18n="project.wms.desc">Led delivery of warehouse management platform with emphasis on operational clarity, stakeholder coordination, and execution flow.</p>
-                        <div class="project-tags">
-                            <span>Stakeholders</span>
-                            <span>Execution</span>
-                            <span>Operations</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🤖</span>
-                            <span class="project-type">AI Initiative Cluster</span>
-                        </div>
-                        <h3>AI Social Media Agents</h3>
-                        <p class="role" data-i18n="project.ai.role">Role: Project Manager Lead</p>
-                        <p class="project-copy" data-i18n="project.ai.desc">Managed delivery of AI Agents for Instaperfect, OMG, Paragon, and Makeover brands across multiple social media platforms.</p>
-                        <div class="project-tags">
-                            <span>Agile</span>
-                            <span>Multi-project</span>
-                            <span>Client Delivery</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🤖</span>
-                            <span class="project-type">AI Platform</span>
-                        </div>
-                        <h3>Auresys Audit AI Platform</h3>
-                        <p class="role" data-i18n="project.auresys.role">Role: Project Manager</p>
-                        <p class="project-copy" data-i18n="project.auresys.desc">Managed development of AI-based audit platform with cross-functional team coordination and Agile delivery.</p>
-                        <div class="project-tags">
-                            <span>AI</span>
-                            <span>Audit</span>
-                            <span>Scrum</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">📱</span>
-                            <span class="project-type">Mobile Apps</span>
-                        </div>
-                        <h3>JRKU — Jasa Raharja Digital Platform</h3>
-                        <p class="role" data-i18n="project.jrku.role">Role: Project Manager</p>
-                        <p class="project-copy" data-i18n="project.jrku.desc">Managed JRKU Approval, Mobile Service, Rebuild, External, and Web Partner projects for Jasa Raharja.</p>
-                        <div class="project-tags">
-                            <span>Mobile</span>
-                            <span>Enterprise</span>
-                            <span>Coordination</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">📱</span>
-                            <span class="project-type">Mobile Apps</span>
-                        </div>
-                        <h3>Zendo, Merapi & Sumu Apps</h3>
-                        <p class="role" data-i18n="project.zendo.role">Role: Project Manager</p>
-                        <p class="project-copy" data-i18n="project.zendo.desc">Led mobile app delivery across transportation, health center information system, and Muhammadiyah lifestyle contexts.</p>
-                        <div class="project-tags">
-                            <span>Mobile</span>
-                            <span>Coordination</span>
-                            <span>Scrum</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">💬</span>
-                            <span class="project-type">AI Feature</span>
-                        </div>
-                        <h3>IZI Custom Agent Allocation</h3>
-                        <p class="role" data-i18n="project.izi.role">Role: Project Manager</p>
-                        <p class="project-copy" data-i18n="project.izi.desc">Developed a system that automatically assigns broadcasting agents when users respond to a broadcast, ensuring stable broadcast-agent integration.</p>
-                        <div class="project-tags">
-                            <span>AI</span>
-                            <span>Integration</span>
-                            <span>Scrum</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">♻️</span>
-                            <span class="project-type">Product Concept</span>
-                        </div>
-                        <h3>ECOLOG Waste Recording System</h3>
-                        <p class="role" data-i18n="project.ecolog.role">Role: Scrum Master & Lead Business</p>
-                        <p class="project-copy" data-i18n="project.ecolog.desc">Built a waste tracking system for TPS Gosari with Scrum framework, market research (TAM, SAM, SOM), and stakeholder needs collection.</p>
-                        <div class="project-tags">
-                            <span>Business Analysis</span>
-                            <span>Scrum</span>
-                            <span>Product Framing</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🍎</span>
-                            <span class="project-type">Product Sprint Case</span>
-                        </div>
-                        <h3>SukaBuah App</h3>
-                        <p class="role" data-i18n="project.sukabuah.role">Role: Scrum Master</p>
-                        <p class="project-copy" data-i18n="project.sukabuah.desc">Facilitated a three-sprint digital product cycle with PRD creation, pitch deck delivery, design thinking, and burndown chart tracking.</p>
-                        <div class="project-tags">
-                            <span>Discovery</span>
-                            <span>Sprint Planning</span>
-                            <span>Facilitation</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">📊</span>
-                            <span class="project-type">Data Science</span>
-                        </div>
-                        <h3>Machine Learning for Retail: Product Packaging</h3>
-                        <p class="role" data-i18n="project.ml.role">Role: Data Scientist</p>
-                        <p class="project-copy" data-i18n="project.ml.desc">Identified product package combinations using R programming, market basket analysis, and statistical analysis of sales transaction data.</p>
-                        <div class="project-tags">
-                            <span>R</span>
-                            <span>Data Analysis</span>
-                            <span>Machine Learning</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🎨</span>
-                            <span class="project-type">UI/UX Redesign</span>
-                        </div>
-                        <h3>Maxim App Redesign</h3>
-                        <p class="role" data-i18n="project.maxim.role">Role: UI/UX Designer</p>
-                        <p class="project-copy" data-i18n="project.maxim.desc">Revamped Maxim app with Design Thinking method, including empathy maps, wireframing, design systems, and high-fidelity prototype.</p>
-                        <div class="project-tags">
-                            <span>UX Thinking</span>
-                            <span>Figma</span>
-                            <span>Prototype</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🧴</span>
-                            <span class="project-type">Business Plan</span>
-                        </div>
-                        <h3>Ecoenzym+ Business Plan Competition</h3>
-                        <p class="role" data-i18n="project.ecoenzym.role">Role: Chairman / Founder</p>
-                        <p class="project-copy" data-i18n="project.ecoenzym.desc">Created cleaning products from fruit waste with 7P marketing analysis, financial projections, and growth plan strategy.</p>
-                        <div class="project-tags">
-                            <span>Business</span>
-                            <span>Strategy</span>
-                            <span>Financial</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🛵</span>
-                            <span class="project-type">Mobile Apps</span>
-                        </div>
-                        <h3>Muslim Super Apps</h3>
-                        <p class="role" data-i18n="project.muslim.role">Role: Assistant Project Manager</p>
-                        <p class="project-copy" data-i18n="project.muslim.desc">Supported delivery of a comprehensive mobile lifestyle application for the Muslim community with Scrum framework.</p>
-                        <div class="project-tags">
-                            <span>Mobile</span>
-                            <span>Lifestyle</span>
-                            <span>Scrum</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">🛡️</span>
-                            <span class="project-type">Government</span>
-                        </div>
-                        <h3>KP2MI — Form Pengaduan Imigrant</h3>
-                        <p class="role" data-i18n="project.kp2mi.role">Role: Project Manager Lead</p>
-                        <p class="project-copy" data-i18n="project.kp2mi.desc">Led execution of immigration complaint form project for the Indonesian Ministry of Manpower and Immigration.</p>
-                        <div class="project-tags">
-                            <span>Government</span>
-                            <span>Agile</span>
-                            <span>Client Delivery</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-icon" aria-hidden="true">⛽</span>
-                            <span class="project-type">Enterprise</span>
-                        </div>
-                        <h3>myPertamina Merchant</h3>
-                        <p class="role" data-i18n="project.pertamina.role">Role: Co-Project Manager</p>
-                        <p class="project-copy" data-i18n="project.pertamina.desc">Co-managed the merchant platform project for myPertamina with structured coordination and delivery tracking.</p>
-                        <div class="project-tags">
-                            <span>Enterprise</span>
-                            <span>Platform</span>
-                            <span>Coordination</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="gallery">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="gallery.kicker">Project Gallery</p>
-                    <h2 data-i18n="gallery.title">Screenshots & activity highlights across projects.</h2>
-                    <p class="section-intro" data-i18n="gallery.intro">A visual look at dashboards, platforms, and documentation from the initiatives I led or contributed to.</p>
-                </div>
-
-                <div class="gallery-grid">
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 133042.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 133111.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 133401.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 133515.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 133759.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 133826.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143332.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143349.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143403.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143426.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143437.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143601.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143616.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143629.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143644.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143659.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143715.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 143723.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 145052.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 145108.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 145848.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 145912.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 145927.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 145947.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150249.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150258.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150307.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150324.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150337.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150353.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150406.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150422.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150432.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150449.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150504.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                    <figure class="gallery-card">
-                        <img src="galeri_portofolio/Cuplikan layar 2026-07-30 150528.png" alt="Project screenshot" loading="lazy">
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="skills.kicker">Core Strengths</p>
-                    <h2 data-i18n="skills.title">Built from management fundamentals, product thinking, data science, and communication.</h2>
-                    <p class="section-intro" data-i18n="skills.intro">A diverse skill set combining hard skills, soft skills, and technical tools for end-to-end delivery.</p>
-                </div>
-
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3 data-i18n="skills.hardTitle">Hard Skills</h3>
-                        <div class="skill-tags">
-                            <span class="tag tag-main">Public Speaking</span>
-                            <span class="tag tag-main">Product Management</span>
-                            <span class="tag tag-main">Data Analysis</span>
-                            <span class="tag">UI/UX Design</span>
-                            <span class="tag">Agile & Scrum</span>
-                            <span class="tag">Risk Management</span>
-                            <span class="tag">Project Management</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3 data-i18n="skills.softTitle">Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Communication</span>
-                            <span class="tag">Leadership</span>
-                            <span class="tag">System Design Analysis</span>
-                            <span class="tag">Time Management</span>
-                            <span class="tag">Strategic Thinking</span>
-                            <span class="tag">Analytical Skills</span>
-                            <span class="tag">Negotiation</span>
-                            <span class="tag">Teamwork</span>
-                            <span class="tag">Problem Solving</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3 data-i18n="skills.softwareTitle">Software & Tools</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Figma</span>
-                            <span class="tag">Microsoft Office</span>
-                            <span class="tag">Canva</span>
-                            <span class="tag">R Studio</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">SPSS</span>
-                            <span class="tag">Trello</span>
-                            <span class="tag">Notion</span>
-                            <span class="tag">Asana</span>
-                            <span class="tag">Taiga</span>
-                            <span class="tag">Slack</span>
-                            <span class="tag">Google Sheets</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3 data-i18n="skills.frameworkTitle">Frameworks & Methods</h3>
-                        <div class="skill-tags">
-                            <span class="tag tag-main">Scrum Framework</span>
-                            <span class="tag tag-main">Agile Methods</span>
-                            <span class="tag">Design Thinking</span>
-                            <span class="tag">SDLC</span>
-                            <span class="tag">Product Discovery</span>
-                            <span class="tag">UML</span>
-                            <span class="tag">Business Analysis</span>
-                            <span class="tag">Financial Modeling</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3 data-i18n="skills.interpersonalTitle">Interpersonal Skills</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Negotiation</span>
-                            <span class="tag">Teamwork</span>
-                            <span class="tag">Problem Solving</span>
-                            <span class="tag">Stakeholder Management</span>
-                            <span class="tag">Client Communication</span>
-                            <span class="tag">Cross-functional Collaboration</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3 data-i18n="skills.langTitle">Language</h3>
-                        <div class="skill-tags">
-                            <span class="tag tag-main">Bahasa Indonesia</span>
-                            <span class="tag tag-main">English</span>
-                            <span class="tag">TOEFL 633</span>
-                            <span class="tag">AAEPT 564</span>
-                            <span class="tag">Professional Communication</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="organization" class="organization">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="org.kicker">Community & Leadership</p>
-                    <h2 data-i18n="org.title">Organizational experience that shaped leadership and collaboration.</h2>
-                    <p class="section-intro" data-i18n="org.intro">Active involvement in campus organizations, startup communities, and social initiatives.</p>
-                </div>
-
-                <div class="org-timeline">
-                    <article class="org-card">
-                        <h3 data-i18n="org.bim.title">BIM (Business Initiative Movement)</h3>
-                        <p class="org-role" data-i18n="org.bim.role">Member of the Community</p>
-                        <p class="date">November 2025 – Now</p>
-                        <p class="org-desc" data-i18n="org.bim.desc">A collection of startup founders in Bandung. Participating in community events from startup training to soft skills development and cross-team collaborations.</p>
-                    </article>
-
-                    <article class="org-card">
-                        <h3 data-i18n="org.komunitas.title">Komunitas Startup Jogja</h3>
-                        <p class="org-role" data-i18n="org.komunitas.role">Member of the Community</p>
-                        <p class="date">March 2021 – Now</p>
-                        <p class="org-desc" data-i18n="org.komunitas.desc">A collection of startup founders in Jakarta. Participating in community events and collaborations between teams and startups.</p>
-                    </article>
-
-                    <article class="org-card">
-                        <h3 data-i18n="org.fossei.title">FoSSEI Regional Yogyakarta</h3>
-                        <p class="org-role" data-i18n="org.fossei.role">Secretary of Media and Technology Department</p>
-                        <p class="date">February 2025 – October 2025</p>
-                        <p class="org-desc" data-i18n="org.fossei.desc">Responsible for providing education on Sharia Economics and optimizing potential talent interests of cadres through competitions and work programs.</p>
-                    </article>
-
-                    <article class="org-card">
-                        <h3 data-i18n="org.bem.title">BEM Alma Ata University</h3>
-                        <p class="org-role" data-i18n="org.bem.role">Coordinator of the Ministry of Home Affairs</p>
-                        <p class="date">June 2023 – July 2024</p>
-                        <p class="org-desc" data-i18n="org.bem.desc">Coordinated campus activities, actively addressed campus issues and problems, and served as a forum for student aspirations regarding campus policies.</p>
-                    </article>
-
-                    <article class="org-card">
-                        <h3 data-i18n="org.duta.title">Duta UMKM Ekonom Rabbani</h3>
-                        <p class="org-role" data-i18n="org.duta.role">Rabbani Economist MSME Ambassador</p>
-                        <p class="date">February 2023 – November 2023</p>
-                        <p class="org-desc" data-i18n="org.duta.desc">Served as MSME Ambassador under FOSSEI in Yogyakarta, participating in startup training events and facilitating collaborations between teams and startups.</p>
-                    </article>
-
-                    <article class="org-card">
-                        <h3 data-i18n="org.hima.title">Information Systems Student Association</h3>
-                        <p class="org-role" data-i18n="org.hima.role">External Department Coordinator</p>
-                        <p class="date">March 2021 – March 2022</p>
-                        <p class="org-desc" data-i18n="org.hima.desc">Built external relations between study programs, contributed to activities outside the study program scope, and ensured work program success.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="honors" class="honors">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="honors.kicker">Recognition</p>
-                    <h2 data-i18n="honors.title">Honors, awards, and competitive achievements.</h2>
-                    <p class="section-intro" data-i18n="honors.intro">Recognition from campus ambassador programs, business plan competitions, and national-level contests.</p>
-                </div>
-
-                <div class="honors-grid">
-                    <article class="honor-card">
-                        <h3>Putra Putri UAA 2022</h3>
-                        <p class="honor-place" data-i18n="honors.uaa.place">1st Place — Campus Ambassador</p>
-                        <p class="date">November 2022</p>
-                        <p class="honor-desc" data-i18n="honors.uaa.desc">Winner as 1st Place Campus Ambassador of Alma Ata University in 2022.</p>
-                    </article>
-
-                    <article class="honor-card">
-                        <h3>Idea PKM Competition</h3>
-                        <p class="honor-place" data-i18n="honors.pkm.place">1st Place — PKM-K (Entrepreneurship)</p>
-                        <p class="date">January 2023</p>
-                        <p class="honor-desc" data-i18n="honors.pkm.desc">Won the campus level PKM idea competition in the field of entrepreneurship in 2023 and 2022.</p>
-                    </article>
-
-                    <article class="honor-card">
-                        <h3>Gemastik 2022</h3>
-                        <p class="honor-place" data-i18n="honors.gemastik.place">Participant — User Experience</p>
-                        <p class="date">August 2022</p>
-                        <p class="honor-desc" data-i18n="honors.gemastik.desc">Participated in Gemastik competition in the field of User Experience Design.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="education">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="education.kicker">Credentials</p>
-                    <h2 data-i18n="education.title">Academic foundation and certifications that support execution quality.</h2>
-                    <p class="section-intro" data-i18n="education.intro">A mix of formal education and practical upskilling in management, product, data, and digital technology.</p>
-                </div>
-
-                <div class="education-main">
-                    <article class="edu-card">
-                        <h3>S1 Information Systems</h3>
-                        <p class="institution">Alma Ata University, Yogyakarta</p>
-                        <p class="date">August 2021 – September 2025</p>
-                        <p class="edu-detail" data-i18n="education.cardOneDetail">Data Analysis, Data Visualization, System Integration, Design Thinking, UML, Business Process Analysis, Supply Chain Management, Basic Programming, Risk Management, Enterprise Architecture, Digital Innovation, and more.</p>
-                        <p class="highlight" data-i18n="education.cardOneHighlight">GPA 3.81/4.00 · AAEPT 564 · TOEFL 633</p>
-                    </article>
-
-                    <article class="edu-card">
-                        <h3>Certified IT Manager (CITM)</h3>
-                        <p class="institution">ESAS Management, Jakarta</p>
-                        <p class="date">April 2025</p>
-                        <p class="edu-detail" data-i18n="education.cardTwoDetail">32-hour training on IT roles, project management, information security, vendor coordination, application lifecycle, virtualization, storage solutions, and security logging operations.</p>
-                        <p class="highlight" data-i18n="education.cardTwoHighlight">Final Grade: 89.8/100</p>
-                    </article>
-                </div>
-
-                <h3 class="cert-title" data-i18n="education.certTitle">Certifications</h3>
-                <div class="cert-grid">
-                    <span class="cert-badge">Certified IT Manager — ESAS 2025</span>
-                    <span class="cert-badge">Product Manager — Rakamin 2025</span>
-                    <span class="cert-badge">Data Science Course — Dsarea 2025</span>
-                    <span class="cert-badge">Baparekraf Developer Day 2024</span>
-                    <span class="cert-badge">Digital Product Management — Binar 2024</span>
-                    <span class="cert-badge">Machine Learning Retail — DQLab 2024</span>
-                    <span class="cert-badge">Data Analysis Finance — DQLab 2024</span>
-                    <span class="cert-badge">Business English — Bisalah.id 2024</span>
-                    <span class="cert-badge">Foundations: Data Everywhere — Coursera 2024</span>
-                    <span class="cert-badge">UI/UX Fullstack — Myskill 2023</span>
-                    <span class="cert-badge">UI/UX Designer — Rakamin 2023</span>
-                    <span class="cert-badge">Intro to Product Mgmt — Revou 2023</span>
-                    <span class="cert-badge">Intro to Product Mgmt — Kuncie 2023</span>
-                    <span class="cert-badge">PKM Idea Competition Winner 2023</span>
-                    <span class="cert-badge">Leadership Training — Forpimawa 2023</span>
-                    <span class="cert-badge">Gemastik UX Participant 2022</span>
-                    <span class="cert-badge">Putra UAA 1st Place 2022</span>
-                </div>
-
-                <h3 class="cert-title bootcamp-title" data-i18n="education.bootcampTitle">Bootcamp & Training</h3>
-                <div class="bootcamp-grid">
-                    <article class="bootcamp-card">
-                        <h4>Digital Product Management</h4>
-                        <p class="institution">Binar Academy — Independent Campus Program</p>
-                        <p class="date">August 2023 – January 2024</p>
-                        <ul class="exp-list">
-                            <li data-i18n="bootcamp.binar.li1">Deliver Pitch Deck Products to Stakeholders</li>
-                            <li data-i18n="bootcamp.binar.li2">Waterfall and Agile methodologies</li>
-                            <li data-i18n="bootcamp.binar.li3">Six Thinking Hat implementation</li>
-                            <li data-i18n="bootcamp.binar.li4">Scrum Framework (Agile Method)</li>
-                            <li data-i18n="bootcamp.binar.li5">Basic Product Management & Data Analysis</li>
-                            <li data-i18n="bootcamp.binar.li6">Product Discovery & Product Economics</li>
-                            <li data-i18n="bootcamp.binar.li7">SDLC in product development</li>
-                        </ul>
-                    </article>
-
-                    <article class="bootcamp-card">
-                        <h4>Intermediate Data Science</h4>
-                        <p class="institution">Fresh Graduate Academy — Kominfo</p>
-                        <p class="date">July 2025 – August 2025</p>
-                        <ul class="exp-list">
-                            <li data-i18n="bootcamp.kominfo.li1">Data Screening & Data Analysis</li>
-                            <li data-i18n="bootcamp.kominfo.li2">Data Objects & Basic Analysis</li>
-                            <li data-i18n="bootcamp.kominfo.li3">Data Construction and Documentation</li>
-                            <li data-i18n="bootcamp.kominfo.li4">Model Design Strategies</li>
-                            <li data-i18n="bootcamp.kominfo.li5">Machine Learning Model Implementation</li>
-                            <li data-i18n="bootcamp.kominfo.li6">Models Evaluation and Interpretation</li>
-                        </ul>
-                    </article>
-
-                    <article class="bootcamp-card">
-                        <h4>Cloud AI Application for Digital Business</h4>
-                        <p class="institution">MICROCREDENTIAL Program</p>
-                        <p class="date">October 2024 – December 2024</p>
-                        <ul class="exp-list">
-                            <li data-i18n="bootcamp.micro.li1">AI and Cloud Computing Introduction</li>
-                            <li data-i18n="bootcamp.micro.li2">Machine Learning: Supervised & Unsupervised</li>
-                            <li data-i18n="bootcamp.micro.li3">Gemini for Google Cloud</li>
-                            <li data-i18n="bootcamp.micro.li4">Cloud Digital Leader</li>
-                            <li data-i18n="bootcamp.micro.li5">Generative AI</li>
-                        </ul>
-                    </article>
-
-                    <article class="bootcamp-card">
-                        <h4>Data Science</h4>
-                        <p class="institution">Dsarea</p>
-                        <p class="date">March 2025 – April 2025</p>
-                        <ul class="exp-list">
-                            <li data-i18n="bootcamp.dsarea.li1">Excel for Advanced</li>
-                            <li data-i18n="bootcamp.dsarea.li2">Excel Data Analyst</li>
-                            <li data-i18n="bootcamp.dsarea.li3">Python</li>
-                            <li data-i18n="bootcamp.dsarea.li4">SPSS</li>
-                            <li data-i18n="bootcamp.dsarea.li5">R-Stats</li>
-                            <li data-i18n="bootcamp.dsarea.li6">SQL</li>
-                        </ul>
-                    </article>
-
-                    <article class="bootcamp-card">
-                        <h4>Learning Data Science</h4>
-                        <p class="institution">DQLab</p>
-                        <p class="date">November 2023 – March 2024</p>
-                        <ul class="exp-list">
-                            <li data-i18n="bootcamp.dqlab.li1">Retail Market Basket Analysis</li>
-                            <li data-i18n="bootcamp.dqlab.li2">R Language Programming</li>
-                            <li data-i18n="bootcamp.dqlab.li3">Data Types and Variables in R</li>
-                            <li data-i18n="bootcamp.dqlab.li4">Data Science Fundamentals</li>
-                        </ul>
-                    </article>
-
-                    <article class="bootcamp-card">
-                        <h4>UI/UX Research & Design Fullstack</h4>
-                        <p class="institution">Myskill Intensive Bootcamp</p>
-                        <p class="date">March 2023</p>
-                        <ul class="exp-list">
-                            <li data-i18n="bootcamp.myskill.li1">Fundamental UI-UX Design</li>
-                            <li data-i18n="bootcamp.myskill.li2">UX Design, Research & Writing</li>
-                            <li data-i18n="bootcamp.myskill.li3">Wireframing</li>
-                            <li data-i18n="bootcamp.myskill.li4">Introduction to Figma</li>
-                            <li data-i18n="bootcamp.myskill.li5">Visual Design Mockup</li>
-                            <li data-i18n="bootcamp.myskill.li6">High Fidelity Prototype</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
-                    <h2 data-i18n="contact.title">Let's build something structured, useful, and well-executed.</h2>
-                    <p class="section-intro" data-i18n="contact.intro">Open to professional opportunities, collaboration, and conversations around project delivery, product direction, and digital execution.</p>
-                </div>
-
-                <div class="contact-grid">
-                    <article class="contact-method">
-                        <h3 data-i18n="contact.emailLabel">Email</h3>
-                        <a href="mailto:medifebr212@gmail.com">medifebr212@gmail.com</a>
-                    </article>
-                    <article class="contact-method">
-                        <h3 data-i18n="contact.phoneLabel">Phone</h3>
-                        <a href="https://wa.me/6283172941924" target="_blank" rel="noreferrer">+62 831 7294 1924</a>
-                    </article>
-                    <article class="contact-method">
-                        <h3 data-i18n="contact.linkedinLabel">LinkedIn</h3>
-                        <a href="https://linkedin.com/in/medy-febriyansyah" target="_blank" rel="noreferrer">linkedin.com/in/medy-febriyansyah</a>
-                    </article>
-                    <article class="contact-method">
-                        <h3 data-i18n="contact.portfolioLabel">Portfolio</h3>
-                        <a href="https://medyfebriyansyah.github.io/portofolio/" target="_blank" rel="noreferrer">Portofolio Medy</a>
-                    </article>
-                    <article class="contact-method">
-                        <h3 data-i18n="contact.locationLabel">Location</h3>
-                        <p data-i18n="contact.locationValue">Bantul, Yogyakarta, Indonesia</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p data-i18n="footer.copy">&copy; 2026 Medy Febriyansyah, S.Kom., CITM. Clarity. Leadership. Product-focused execution.</p>
-    </footer>
-
-    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-        <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
-        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous">&lsaquo;</button>
-        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next">&rsaquo;</button>
-        <img class="lightbox-image" src="" alt="Enlarged screenshot">
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-dot"></span> Rizka<span class="brand-accent">.</span>Prabu
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#organisasi">Organisasi</a>
+        <a href="#penghargaan">Penghargaan</a>
+        <a href="#skills">Skills</a>
+      </nav>
+      <a href="#kontak" class="btn btn-sm btn-primary nav-cta">Hubungi Saya</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Halo, selamat datang! 👋</p>
+        <h1 class="hero-title">
+          Saya <span class="grad-text">Rizka Septia Prabu</span>,
+          S.E., CIMM
+        </h1>
+        <p class="hero-subtitle">
+          Lulusan Terbaik Ekonomi Islam UII (Magna Cum Laude) &amp; Penggerak
+          ekosistem ekonomi &amp; keuangan syariah nasional.
+        </p>
+        <div class="hero-actions">
+          <a href="#kontak" class="btn btn-primary">Mari Terhubung</a>
+          <a href="CV%20ATS%20Rizka%20Septia%20Prabu%20(2).pdf" download class="btn btn-outline">Download CV</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>3.93</strong><span>GPA / 4.00</span></li>
+          <li><strong>250+</strong><span>Chapter Kampus</span></li>
+          <li><strong>17</strong><span>Provinsi Terjangkau</span></li>
+          <li><strong>2.350+</strong><span>Ambassador Nasional</span></li>
+        </ul>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/images/rizka.png" alt="Foto Rizka Septia Prabu" />
+        </div>
+        <div class="photo-badge badge-top">
+          <span class="badge-icon">🎓</span>
+          Magna Cum Laude
+        </div>
+        <div class="photo-badge badge-bottom">
+          <span class="badge-icon">⭐</span>
+          Certified CIMM
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll untuk menjelajah</span>
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="section" id="tentang">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Gadis dari Sleman yang <span class="grad-text">menggerakkan ekonomi syariah</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>
+            Lulusan terbaik program Ekonomi Islam Universitas Islam Indonesia dengan predikat
+            <strong>Magna Cum Laude</strong> (3 tahun 7 bulan, IPK 3.93/4.00, dan nilai "A" pada skripsi).
+            Saat ini aktif mendorong ekosistem syariah nasional sebagai intern
+            <strong>Divisi Promosi KNEKS</strong>.
+          </p>
+          <p>
+            Pemegang sertifikasi profesional <strong>Certified Islamic Money Manager (CIMM)</strong> dari
+            IARFC Indonesia, dengan rekam jejak kepemimpinan sebagai
+            <strong>Koordinator Nasional Pembinaan Kader FoSSEI</strong> yang mengelola strategi
+            pengembangan manusia di 250 chapter universitas.
+          </p>
+          <p>
+            Berpengalaman sebagai <strong>Duta Literasi Keuangan Syariah OJK</strong> dengan keahlian
+            komunikasi institusional, digital storytelling, dan manajemen stakeholder di industri
+            keuangan syariah &amp; halal.
+          </p>
+          <div class="about-contact">
+            <div><strong>📍</strong> Sleman, DI Yogyakarta</div>
+            <div><strong>📧</strong> rizka.prabu@gmail.com</div>
+            <div><strong>📱</strong> 0851-5992-4096</div>
+          </div>
+        </div>
+        <div class="about-card about-values reveal">
+          <h3>Nilai yang saya pegang</h3>
+          <div class="value-list">
+            <div class="value-item">
+              <span class="value-num">01</span>
+              <div><strong>Kebermanfaatan</strong><p>Mengutamakan dampak nyata bagi masyarakat &amp; ekosistem halal.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">02</span>
+              <div><strong>Transparansi</strong><p>Akuntabilitas tinggi dalam pengelolaan program &amp; keuangan.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">03</span>
+              <div><strong>Kolaborasi</strong><p>Membangun jejaring lintas lembaga, OJK, BI, hingga bursa.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">04</span>
+              <div><strong>Pembelajaran</strong><p>Mendorong literasi &amp; inklusi keuangan syariah bagi semua.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section class="section section-alt" id="pengalaman">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Pengalaman Kerja</span>
+        <h2 class="section-title">Perjalanan profesional di <span class="grad-text">dunia syariah</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3>KNEKS — Divisi Promosi, Intern</h3>
+                <p class="timeline-org">Komite Nasional Ekonomi dan Keuangan Syariah</p>
+              </div>
+              <span class="timeline-date">Jul 2026 — Sekarang</span>
+            </div>
+            <ul>
+              <li>Menyusun strategi promosi skala nasional untuk mempercepat adopsi ekonomi &amp; keuangan syariah Indonesia.</li>
+              <li>Anggota panitia <strong>Adinata Syariah 2026</strong> — event nasional yang menjangkau 17 provinsi.</li>
+              <li>Mewakili institusi pada <strong>Halal Expo Indonesia (HEI) 2026</strong> untuk integrasi industri halal.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3>MES DIY — Volunteer &amp; Event Coordinator</h3>
+                <p class="timeline-org">Islamic Economic Society DIY</p>
+              </div>
+              <span class="timeline-date">Okt 2025 — Jul 2026</span>
+            </div>
+            <ul>
+              <li>Memoderasi <strong>FGD strategis bersama Bank Indonesia &amp; KDEKS DIY</strong> soal arah pengembangan ekonomi syariah 2026.</li>
+              <li>Mengarahkan 6 komisi sektoral strategis untuk menyusun rekomendasi kebijakan pertumbuhan ekonomi regional.</li>
+              <li>Mengelola relasi VIP &amp; keynote speaker <strong>National Workshop BMT 2026</strong>; program "Arisan Wakaf" memobilisasi hampir Rp1 miliar wakaf tunai.</li>
+              <li>Memimpin fundraising nasional <strong>Rp9.267.000</strong> untuk wilayah bencana di Sumatra.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3>PT Asuransi Jasindo Syariah — Intern</h3>
+                <p class="timeline-org">Industrial Internship Program</p>
+              </div>
+              <span class="timeline-date">Okt 2025 — Des 2025</span>
+            </div>
+            <ul>
+              <li>Mengelola alur kerja operasional &amp; validasi dokumen polis asuransi sesuai prinsip syariah dengan <strong>tingkat akurasi 100%</strong> dan nilai akhir "A".</li>
+              <li>Mengisi edukasi di <strong>"Jasindo Goes to Campus"</strong> UGM Vocational School tentang manajemen risiko syariah.</li>
+              <li>Mengidentifikasi 3 hambatan dokumentasi kritis sehingga <strong>efisiensi proses administrasi naik 15%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section class="section" id="pendidikan">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Pendidikan</span>
+        <h2 class="section-title">Fondasi akademik yang <span class="grad-text">kuat &amp; berprestasi</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>Sarjana Ekonomi (S.E.) — Ekonomi Islam</h3>
+            <p class="edu-org">Universitas Islam Indonesia (UII)</p>
+            <p class="edu-meta"><span class="chip">IPK 3.93 / 4.00</span><span class="chip">Sept 2022 — Apr 2026</span></p>
+            <ul>
+              <li><strong>Penghargaan:</strong> Lulusan Terbaik Berprestasi &amp; Penerima Beasiswa Prestasi Akademik Bank BTN Syariah 2025.</li>
+              <li><strong>Skripsi:</strong> Analisis dampak kebijakan ekonomi pada kinerja pasar modal syariah Indonesia &amp; strategi transformasi digital untuk inklusi keuangan.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📚</div>
+          <div class="edu-body">
+            <h3>Mata Kuliah Kunci</h3>
+            <p class="edu-org">Bidang yang dikuasai selama studi</p>
+            <div class="course-list">
+              <span>Pasar Modal Syariah</span>
+              <span>Investasi &amp; Analisis Portofolio</span>
+              <span>Analisis Laporan Keuangan</span>
+              <span>Manajemen Risiko</span>
+              <span>Operasional Perbankan Syariah</span>
+              <span>Sistem Pengawasan LKS &amp; Audit</span>
+              <span>Ekonometrika</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANISASI -->
+  <section class="section section-alt" id="organisasi">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Kepemimpinan &amp; Organisasi</span>
+        <h2 class="section-title">Memimpin di <span class="grad-text">skala nasional</span></h2>
+      </div>
+
+      <div class="org-grid">
+        <div class="org-card reveal">
+          <div class="org-role">Koordinator Nasional</div>
+          <h3>Pembinaan Kader FoSSEI Nasional</h3>
+          <p class="org-date">Jan 2026 — Sekarang</p>
+          <p>Memimpin strategi human capital nasional untuk 15 wilayah &amp; ±250 chapter universitas; merancang kurikulum kader nasional; melakukan asesmen keberlanjutan organisasi.</p>
+        </div>
+        <div class="org-card reveal">
+          <div class="org-role">Wakil Ketua</div>
+          <h3>Islamic Capital Market Gallery (GIS) FIAI UII</h3>
+          <p class="org-date">Jul 2024 — Des 2025</p>
+          <p>Membangun kemitraan strategis dengan OJK, BNI Sekuritas &amp; IDX Yogyakarta; menginisiasi program Sharia Capital Market School.</p>
+        </div>
+        <div class="org-card reveal">
+          <div class="org-role">Bendahara Umum</div>
+          <h3>FKEI UII</h3>
+          <p class="org-date">Agu 2024 — Agu 2025</p>
+          <p>Mengelola siklus keuangan 50 anggota aktif, alokasi dana operasional Rp1.400.000/bulan, penyusunan RAB lintas divisi, dan audit internal periodik.</p>
+        </div>
+        <div class="org-card reveal">
+          <div class="org-role">Staff Divisi Keuangan</div>
+          <h3>FoSSEI Nasional</h3>
+          <p class="org-date">Jan 2025 — Des 2025</p>
+          <p>Melatih 40 Bendahara Regional melalui workshop modul keuangan; mengembangkan 3 unit usaha kreatif (BUMF) untuk keberlanjutan program nasional.</p>
+        </div>
+        <div class="org-card reveal">
+          <div class="org-role">Sekretaris</div>
+          <h3>Islamic Mini Bank Laboratory FIAI UII</h3>
+          <p class="org-date">2023 — 2024</p>
+          <p>Menyusun LPJ berakurasi tinggi; mengelola SOP operasional harian &amp; sistem pelaporan simulasi perbankan syariah bagi mahasiswa.</p>
+        </div>
+        <div class="org-card reveal">
+          <div class="org-role">Staff Departemen Mahasiswa</div>
+          <h3>Ekonomi Islam UII</h3>
+          <p class="org-date">2023 — 2025</p>
+          <p>Memimpin pengelolaan media sosial resmi prodi; konten edukatif mencapai 34.700+ views; membangun komunitas 663 followers &amp; branding prodi.</p>
+        </div>
+      </div>
+
+      <div class="ambassador reveal">
+        <h3>✨ Duta &amp; Peran Publik</h3>
+        <div class="ambassador-grid">
+          <div class="amb-item">
+            <h4>Duta Literasi Keuangan Syariah</h4>
+            <p>OJK &amp; FoSSEI DIY — Penggerak kampanye #Simfoniberdaya; mendorong inklusi keuangan kepada 50 warga Gunungkidul.</p>
+          </div>
+          <div class="amb-item">
+            <h4>Duta Literasi Keuangan Indonesia (SICANTIKS 2025)</h4>
+            <p>OJK Jakarta Pusat — Bagian dari 2.350 ambassador nasional; memberdayakan ibu, UMKM, &amp; tokoh agama via ToT literasi syariah.</p>
+          </div>
+          <div class="amb-item">
+            <h4>Liaison Officer — I-SAFE 2023</h4>
+            <p>Menjadi LO event fakultas nasional; mengoordinasikan 50 anggota panitia lintas 3 departemen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGHARGAAN -->
+  <section class="section" id="penghargaan">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Penghargaan &amp; Sertifikasi</span>
+        <h2 class="section-title">Rekognisi yang <span class="grad-text">telah diraih</span></h2>
+      </div>
+      <div class="award-grid">
+        <div class="award-card reveal">
+          <span class="award-emoji">🏆</span>
+          <h3>Lulusan Terbaik Berprestasi</h3>
+          <p>Fakultas Ilmu Agama Islam, Universitas Islam Indonesia</p>
+          <span class="award-year">2026</span>
+        </div>
+        <div class="award-card reveal">
+          <span class="award-emoji">🪙</span>
+          <h3>Certified Islamic Money Manager (CIMM)</h3>
+          <p>IARFC Indonesia — sertifikasi internasional diakui 35 kantor perwakilan global.</p>
+          <span class="award-year">2025 — 2027</span>
+        </div>
+        <div class="award-card reveal">
+          <span class="award-emoji">🎖️</span>
+          <h3>Beasiswa Prestasi Akademik</h3>
+          <p>Bank BTN Syariah — atas IPK 3.93 &amp; kontribusi aktif pada pengembangan ekonomi syariah.</p>
+          <span class="award-year">2025</span>
+        </div>
+        <div class="award-card reveal">
+          <span class="award-emoji">🤝</span>
+          <h3>Liaison Officer — I-SAFE</h3>
+          <p>Event fakultas skala nasional yang diselenggarakan LEM FIAI UII.</p>
+          <span class="award-year">2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Skills &amp; Keahlian</span>
+        <h2 class="section-title">Kompetensi yang <span class="grad-text">saya kuasai</span></h2>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-card reveal">
+          <h3><span class="skill-icon">💼</span> Keuangan Syariah &amp; Advokasi</h3>
+          <ul>
+            <li>Promosi Ekonomi Syariah Nasional</li>
+            <li>Perencanaan Keuangan Syariah</li>
+            <li>Operasional Perbankan Syariah (Mini Bank)</li>
+            <li>Akuntansi Syariah &amp; Lembaga Non-Bank</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="skill-icon">📈</span> Investasi &amp; Pasar Modal</h3>
+          <ul>
+            <li>Analisis Pasar Modal Syariah</li>
+            <li>Analisis Investasi &amp; Portofolio</li>
+            <li>Manajemen Kekayaan (Wealth Management)</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="skill-icon">📊</span> Risiko &amp; Data</h3>
+          <ul>
+            <li>Manajemen Risiko Keuangan</li>
+            <li>Audit Internal</li>
+            <li>Metodologi Riset Ekonomi Islam</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="skill-icon">🎯</span> Digital Marketing &amp; PR</h3>
+          <ul>
+            <li>Strategi Promosi Korporasi</li>
+            <li>Strategi Konten TikTok</li>
+            <li>Digital Marketing Islami</li>
+            <li>Social Media Analytics &amp; Branding</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="soft-grid reveal">
+        <div class="soft-card">
+          <span class="soft-emoji">🚀</span>
+          <h4>Kepemimpinan Strategis</h4>
+          <p>Manajemen organisasi skala nasional, koordinasi regional, strategi human capital.</p>
+        </div>
+        <div class="soft-card">
+          <span class="soft-emoji">🗣️</span>
+          <h4>Komunikasi &amp; Stakeholder</h4>
+          <p>Public speaking, moderasi acara (MC), negosiasi, relasi stakeholder tingkat tinggi.</p>
+        </div>
+        <div class="soft-card">
+          <span class="soft-emoji">💡</span>
+          <h4>Literasi &amp; Edukasi Finansial</h4>
+          <p>Edukasi inklusi keuangan syariah, advokasi publik, perencanaan keuangan pribadi.</p>
+        </div>
+      </div>
+
+      <div class="lang-card reveal">
+        <h3>🌐 Bahasa</h3>
+        <div class="lang-list">
+          <div class="lang-item">
+            <div class="lang-head"><strong>Bahasa Indonesia</strong><span>Native</span></div>
+            <div class="bar"><span data-width="100%"></span></div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-head"><strong>English</strong><span>Profesional</span></div>
+            <div class="bar"><span data-width="82%"></span></div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-head"><strong>Arabic</strong><span>Menengah</span></div>
+            <div class="bar"><span data-width="55%"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="section contact" id="kontak">
+    <div class="blob blob-4"></div>
+    <div class="container">
+      <div class="contact-card reveal">
+        <h2>Mari <span class="grad-text">berkolaborasi</span> untuk ekosistem syariah Indonesia</h2>
+        <p>Tertarik bekerja sama, berdiskusi, atau mengundang saya untuk edukasi &amp; moderasi? Silakan hubungi.</p>
+        <div class="contact-channels">
+          <a class="contact-item" href="mailto:rizka.prabu@gmail.com">
+            <span class="ci-icon">📧</span>
+            <div><strong>Email</strong><p>rizka.prabu@gmail.com</p></div>
+          </a>
+          <a class="contact-item" href="tel:+6285159924096">
+            <span class="ci-icon">📱</span>
+            <div><strong>Telepon / WhatsApp</strong><p>0851-5992-4096</p></div>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/rizkaseptiaprabu" target="_blank" rel="noopener">
+            <span class="ci-icon">💼</span>
+            <div><strong>LinkedIn</strong><p>linkedin.com/in/rizkaseptiaprabu</p></div>
+          </a>
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div><strong>Lokasi</strong><p>Sleman, DI Yogyakarta</p></div>
+          </div>
+        </div>
+        <a href="CV%20ATS%20Rizka%20Septia%20Prabu%20(2).pdf" download class="btn btn-primary">Unduh CV Lengkap</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rizka Septia Prabu, S.E., CIMM — Dibuat oleh <a href="https://wa.me/6283172941924" target="_blank" rel="noopener" class="footer-brand">Kerjain.ID</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
